@@ -77,7 +77,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
         rhymSearchBar.delegate = self
         
         //Useful for dismissing Keyboard.
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: Selector("endEditing:")))
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         // Do any additional setup after loading the view, typically from a nib.
     }
 

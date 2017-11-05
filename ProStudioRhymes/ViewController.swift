@@ -13,6 +13,8 @@ class ViewController: UIViewController,UISearchBarDelegate {
    
     //MARK: - Outlet SetUp
     @IBOutlet weak var fetchingWordsIndicator: UIActivityIndicatorView!
+    @IBAction func helpButtonFunction(_ sender: Any) {
+    }
     @IBOutlet weak var proStudioApp2Button: UIButton!
     
     @IBAction func proStudioApp2Action(_ sender: Any) {

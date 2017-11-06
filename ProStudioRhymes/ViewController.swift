@@ -14,6 +14,8 @@ class ViewController: UIViewController,UISearchBarDelegate {
     //MARK: - Outlet SetUp
     @IBOutlet weak var fetchingWordsIndicator: UIActivityIndicatorView!
     @IBAction func helpButtonFunction(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string:"http://novleg.com/contact")!, options: [:], completionHandler: nil)
     }
     @IBOutlet weak var proStudioApp2Button: UIButton!
     
@@ -23,9 +25,11 @@ class ViewController: UIViewController,UISearchBarDelegate {
     }
     
     
-    @IBOutlet weak var proRecorderButton: UIButton!
+    @IBOutlet weak var proStudioBeats: UIButton!
     
-    @IBAction func proRecorderAction(_ sender: Any) {
+    @IBAction func proStudioBeatsAction(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string:"https://itunes.apple.com/us/app/prostudio-beat-library-3-beats/id1082075066?mt=8")!, options: [:], completionHandler: nil)
     }
     
     @IBOutlet weak var beatPack1Button: UIButton!
@@ -52,7 +56,13 @@ class ViewController: UIViewController,UISearchBarDelegate {
         
     }
     
-    @IBOutlet weak var proStudioFXButton: UIButton!
+    @IBAction func beatCreatorAction(_ sender: Any) {
+        UIApplication.shared.open(URL(string:"https://itunes.apple.com/us/app/beatcreator-beat-maker-app/id1212191117?mt=8")!, options: [:], completionHandler: nil)
+        
+        
+    }
+    
+    @IBOutlet weak var beatCreatorButton: UIButton!
 ///////////////////////////////
     
     
@@ -67,11 +77,19 @@ class ViewController: UIViewController,UISearchBarDelegate {
         let beatPackOneImage = imageWithGradient(img: UIImage(named: "beatsPackOne.jpg"))
         let beatPackTwoImage = imageWithGradient(img: UIImage(named: "beatLibraryTwoImage.jpg"))
         let beatPackThreeImage = imageWithGradient(img: UIImage(named: "beatPack3.jpg"))
+        
+        let beatCreatorImage = imageWithGradient(img: UIImage(named:"beatCreatorImage.jpg"))
+        
+        let proStudioBeatsImage = imageWithGradient(img: UIImage(named: "ProStudioBeatLibrary3Image.jpg"))
                 
         beatPack1Button.setBackgroundImage(beatPackOneImage, for: .normal)
         beatPack2Button.setBackgroundImage(beatPackTwoImage, for: .normal)
         beatPack3Button.setBackgroundImage(beatPackThreeImage, for: .normal)
         proStudioApp2Button.setBackgroundImage(UIImage(named:"ProStudioApp2.jpg"), for: .normal)
+        
+        beatCreatorButton.setBackgroundImage(beatCreatorImage, for: .normal)
+        
+        proStudioBeats.setBackgroundImage(proStudioBeatsImage, for: .normal)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,6 +122,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchActive = false
         
+        
         //To dismisskey board
         self.rhymSearchBar.endEditing(true)
         
@@ -112,6 +131,16 @@ class ViewController: UIViewController,UISearchBarDelegate {
        
         //Checks to make sure the searchbar contains text and that it can be unwrapped safely
         guard let wordToRhyme = rhymSearchBar.text else{
+            return
+        }
+        
+        if wordToRhyme.isInt == true || wordToRhyme.isDouble == true  {
+            
+            let inputAlert =   UIAlertController(title: "Invailid Input", message: "Only Strings are allowed.", preferredStyle: .alert)
+            
+            inputAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+            self.present(inputAlert, animated: true, completion: nil)
             return
         }
        
@@ -217,4 +246,12 @@ class ViewController: UIViewController,UISearchBarDelegate {
 
 
 }
-
+extension String {
+    var isInt: Bool {
+        return Int(self) != nil
+    }
+    
+    var isDouble: Bool{
+        return Double(self) != nil
+    }
+}

@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="c9M-li-F3G">
+                            <searchBar contentMode="redraw" text="" placeholder="Enter one word per search" translatesAutoresizingMaskIntoConstraints="NO" id="c9M-li-F3G">
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -32,31 +32,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RQl-VB-ecT">
                                 <rect key="frame" x="0.0" y="285" width="375" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0g-ZS-sGd">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="ProStudio FX">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FF-yo-e5e">
-                                        <rect key="frame" x="125" y="0.0" width="125" height="30"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="ProRecorder ">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="proRecorderAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Coy-2X-dpv"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnT-l4-9Iw" userLabel="ProStudioApp2">
-                                        <rect key="frame" x="250" y="0.0" width="125" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="ProStudioApp2  ">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="proStudioApp2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYX-4b-QEj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0g-ZS-sGd">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="BeatCreator">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="beatCreatorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8zj-FS-C7c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FF-yo-e5e">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="ProStudio Beats">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="proStudioBeatsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Coy-2X-dpv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -132,13 +136,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="beatCreatorButton" destination="e0g-ZS-sGd" id="z8e-aj-0Yf"/>
                         <outlet property="beatPack1Button" destination="QTM-rQ-L6G" id="sf5-If-S0g"/>
                         <outlet property="beatPack2Button" destination="EQv-Dw-Ixy" id="B21-Kz-hco"/>
                         <outlet property="beatPack3Button" destination="Rda-zP-YCS" id="OcT-w4-C5P"/>
                         <outlet property="fetchingWordsIndicator" destination="QyF-K6-9Bh" id="1YM-4R-H1y"/>
-                        <outlet property="proRecorderButton" destination="2FF-yo-e5e" id="NvO-BD-1r3"/>
                         <outlet property="proStudioApp2Button" destination="hnT-l4-9Iw" id="n46-tT-uEJ"/>
-                        <outlet property="proStudioFXButton" destination="e0g-ZS-sGd" id="z8e-aj-0Yf"/>
+                        <outlet property="proStudioBeats" destination="2FF-yo-e5e" id="NvO-BD-1r3"/>
                         <outlet property="rhymSearchBar" destination="c9M-li-F3G" id="urd-wI-4rL"/>
                         <segue destination="qqs-FR-9ib" kind="show" identifier="displayRhymesSegue" id="fPQ-6E-3ro"/>
                     </connections>

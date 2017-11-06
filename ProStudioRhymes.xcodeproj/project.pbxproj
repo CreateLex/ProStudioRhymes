@@ -10,6 +10,8 @@
 		5FC7F48CA88E268E98EA9C81 /* Pods_ProStudioRhymes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996841B4E2466777ABB494CE /* Pods_ProStudioRhymes.framework */; };
 		820377801FACE6F100341FDE /* RhymingTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203777F1FACE6F100341FDE /* RhymingTableTableViewController.swift */; };
 		820377821FADA7E400341FDE /* beatsPackOne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 820377811FADA7E300341FDE /* beatsPackOne.jpg */; };
+		8250308C1FB015320012CB18 /* beatCreatorImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8250308B1FB015310012CB18 /* beatCreatorImage.jpg */; };
+		8250308E1FB015A30012CB18 /* ProStudioBeatLibrary3Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8250308D1FB015A20012CB18 /* ProStudioBeatLibrary3Image.jpg */; };
 		82613A3B1FAAF7B300D21D50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82613A3A1FAAF7B300D21D50 /* AppDelegate.swift */; };
 		82613A3D1FAAF7B300D21D50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82613A3C1FAAF7B300D21D50 /* ViewController.swift */; };
 		82613A401FAAF7B300D21D50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82613A3E1FAAF7B300D21D50 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		4AA27C1E07806FF70E39C06E /* Pods-ProStudioRhymes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProStudioRhymes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProStudioRhymes/Pods-ProStudioRhymes.debug.xcconfig"; sourceTree = "<group>"; };
 		8203777F1FACE6F100341FDE /* RhymingTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhymingTableTableViewController.swift; sourceTree = "<group>"; };
 		820377811FADA7E300341FDE /* beatsPackOne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beatsPackOne.jpg; sourceTree = "<group>"; };
+		8250308B1FB015310012CB18 /* beatCreatorImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beatCreatorImage.jpg; sourceTree = "<group>"; };
+		8250308D1FB015A20012CB18 /* ProStudioBeatLibrary3Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ProStudioBeatLibrary3Image.jpg; sourceTree = "<group>"; };
 		82613A371FAAF7B300D21D50 /* ProStudioRhymes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProStudioRhymes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82613A3A1FAAF7B300D21D50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82613A3C1FAAF7B300D21D50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		82F7BD081FAE55A200F93A6E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8250308D1FB015A20012CB18 /* ProStudioBeatLibrary3Image.jpg */,
+				8250308B1FB015310012CB18 /* beatCreatorImage.jpg */,
 				82F7BD041FAE3E9700F93A6E /* beatPack3.jpg */,
 				82F7BD021FAE3C2100F93A6E /* beatLibraryTwoImage.jpg */,
 				82613A4E1FAAFA2000D21D50 /* Default-568h@2x.png */,
@@ -206,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8250308C1FB015320012CB18 /* beatCreatorImage.jpg in Resources */,
 				82F7BD071FAE435400F93A6E /* ProStudioApp2.jpg in Resources */,
 				82613A451FAAF7B300D21D50 /* LaunchScreen.storyboard in Resources */,
 				82613A421FAAF7B300D21D50 /* Assets.xcassets in Resources */,
@@ -213,6 +220,7 @@
 				82613A5C1FAAFA4600D21D50 /* TopBar.png in Resources */,
 				82F7BD031FAE3C2100F93A6E /* beatLibraryTwoImage.jpg in Resources */,
 				82613A501FAAFA2000D21D50 /* Default@2x.png in Resources */,
+				8250308E1FB015A30012CB18 /* ProStudioBeatLibrary3Image.jpg in Resources */,
 				82613A5B1FAAFA4600D21D50 /* TopBar@2x.png in Resources */,
 				820377821FADA7E400341FDE /* beatsPackOne.jpg in Resources */,
 				82613A5A1FAAFA4600D21D50 /* photo (1).PNG in Resources */,
@@ -430,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UWWHD8G966;
+				DEVELOPMENT_TEAM = TR2MLK3WQ4;
 				INFOPLIST_FILE = ProStudioRhymes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novleg.ProStudioRhymes;
@@ -447,7 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UWWHD8G966;
+				DEVELOPMENT_TEAM = TR2MLK3WQ4;
 				INFOPLIST_FILE = ProStudioRhymes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novleg.ProStudioRhymes;

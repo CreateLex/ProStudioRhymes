@@ -49,6 +49,12 @@
 		<false/>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>novleg.com/contact</key>
+			<dict/>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSIncludesSubdomains</key>
+			<true/>
 			<key>rhymebrain.com</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>

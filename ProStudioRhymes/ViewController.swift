@@ -134,7 +134,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
             return
         }
         
-        if wordToRhyme.range(of: ",") != nil || wordToRhyme.range(of: " ") != nil || wordToRhyme.isEmpty == true {
+        if wordToRhyme.range(of: ",") != nil || wordToRhyme.range(of: " ") != nil || wordToRhyme.isEmpty == true || wordToRhyme.range(of: "/") != nil {
            
             let inputAlert =   UIAlertController(title: "Invailid Input", message: "Only a single word at a time is allowed or you have left the input blank", preferredStyle: .alert)
             
@@ -150,7 +150,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
         
         
         
-        if wordToRhyme.isInt == true || wordToRhyme.isDouble == true  {
+        if wordToRhyme.isInt == true || wordToRhyme.isDouble == true || wordToRhyme.isFloat == true  {
             
             let inputAlert =   UIAlertController(title: "Invailid Input", message: "Only Strings are allowed.", preferredStyle: .alert)
             
@@ -269,5 +269,9 @@ extension String {
     
     var isDouble: Bool{
         return Double(self) != nil
+    }
+    
+    var isFloat: Bool {
+        return Float(self) != nil
     }
 }

@@ -134,6 +134,22 @@ class ViewController: UIViewController,UISearchBarDelegate {
             return
         }
         
+        if wordToRhyme.range(of: ",") != nil || wordToRhyme.range(of: " ") != nil || wordToRhyme.isEmpty == true {
+           
+            let inputAlert =   UIAlertController(title: "Invailid Input", message: "Only a single word at a time is allowed or you have left the input blank", preferredStyle: .alert)
+            
+            inputAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+            self.present(inputAlert, animated: true, completion: nil)
+            return
+            
+        }
+        
+        
+        
+        
+        
+        
         if wordToRhyme.isInt == true || wordToRhyme.isDouble == true  {
             
             let inputAlert =   UIAlertController(title: "Invailid Input", message: "Only Strings are allowed.", preferredStyle: .alert)

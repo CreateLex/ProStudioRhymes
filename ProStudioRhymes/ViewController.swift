@@ -121,6 +121,17 @@ class ViewController: UIViewController,UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchActive = false
+        // checks if connected to internet.
+        if currentReachabilityStatus == .notReachable {
+            
+            let connectionAlert =   UIAlertController(title: "No Network Connection", message: "Please connect to a network and try again.", preferredStyle: .alert)
+            
+            connectionAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+            self.present(connectionAlert, animated: true, completion: nil)
+            
+            return
+        }
         
         
         //To dismisskey board
@@ -133,7 +144,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
         guard let wordToRhyme = rhymSearchBar.text else{
             return
         }
-        
+        // checks input to make sure that only one word is entered at a time and that fractions are not accepted.
         if wordToRhyme.range(of: ",") != nil || wordToRhyme.range(of: " ") != nil || wordToRhyme.isEmpty == true || wordToRhyme.range(of: "/") != nil {
            
             let inputAlert =   UIAlertController(title: "Invailid Input", message: "Only a single word at a time is allowed or you have left the input blank", preferredStyle: .alert)
@@ -149,7 +160,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
         
         
         
-        
+        //makes sure that input cannot take any kind of number
         if wordToRhyme.isInt == true || wordToRhyme.isDouble == true || wordToRhyme.isFloat == true  {
             
             let inputAlert =   UIAlertController(title: "Invailid Input", message: "Only Strings are allowed.", preferredStyle: .alert)
@@ -262,6 +273,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
 
 
 }
+// String extension that allows for a string to be checked for being an int, double, or float
 extension String {
     var isInt: Bool {
         return Int(self) != nil

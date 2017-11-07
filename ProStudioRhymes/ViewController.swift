@@ -90,6 +90,10 @@ class ViewController: UIViewController,UISearchBarDelegate {
         beatCreatorButton.setBackgroundImage(beatCreatorImage, for: .normal)
         
         proStudioBeats.setBackgroundImage(proStudioBeatsImage, for: .normal)
+        
+        proStudioBeats.titleLabel?.numberOfLines = 0
+        proStudioBeats.titleLabel?.lineBreakMode = .byWordWrapping
+        proStudioBeats.titleLabel?.textAlignment = .center
     }
     override func viewDidLoad() {
         super.viewDidLoad()

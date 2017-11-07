@@ -15,8 +15,6 @@
 		82613A3B1FAAF7B300D21D50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82613A3A1FAAF7B300D21D50 /* AppDelegate.swift */; };
 		82613A3D1FAAF7B300D21D50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82613A3C1FAAF7B300D21D50 /* ViewController.swift */; };
 		82613A401FAAF7B300D21D50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82613A3E1FAAF7B300D21D50 /* Main.storyboard */; };
-		82613A421FAAF7B300D21D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82613A411FAAF7B300D21D50 /* Assets.xcassets */; };
-		82613A451FAAF7B300D21D50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82613A431FAAF7B300D21D50 /* LaunchScreen.storyboard */; };
 		82613A4F1FAAFA2000D21D50 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 82613A4C1FAAFA2000D21D50 /* Default.png */; };
 		82613A501FAAFA2000D21D50 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82613A4D1FAAFA2000D21D50 /* Default@2x.png */; };
 		82613A511FAAFA2000D21D50 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82613A4E1FAAFA2000D21D50 /* Default-568h@2x.png */; };
@@ -29,6 +27,10 @@
 		82613A5F1FAAFA4600D21D50 /* iconrhymes.png in Resources */ = {isa = PBXBuildFile; fileRef = 82613A581FAAFA4600D21D50 /* iconrhymes.png */; };
 		82D5347D1FAC43F600B9F9DE /* RhymeStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5347C1FAC43F600B9F9DE /* RhymeStructure.swift */; };
 		82E526EB1FB13B6D00859268 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E526EA1FB13B6D00859268 /* Reachability.swift */; };
+		82E526F11FB1611900859268 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82E526F01FB1611900859268 /* Media.xcassets */; };
+		82E526F31FB1635A00859268 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E526F21FB1635A00859268 /* Launch Screen.storyboard */; };
+		82E526F51FB1649C00859268 /* pexels-photo-144429.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82E526F41FB1649C00859268 /* pexels-photo-144429.jpg */; };
+		82E526F71FB1657D00859268 /* micDrop.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 82E526F61FB1657D00859268 /* micDrop.jpeg */; };
 		82F7BD031FAE3C2100F93A6E /* beatLibraryTwoImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82F7BD021FAE3C2100F93A6E /* beatLibraryTwoImage.jpg */; };
 		82F7BD051FAE3E9700F93A6E /* beatPack3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82F7BD041FAE3E9700F93A6E /* beatPack3.jpg */; };
 		82F7BD071FAE435400F93A6E /* ProStudioApp2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82F7BD061FAE435300F93A6E /* ProStudioApp2.jpg */; };
@@ -44,8 +46,6 @@
 		82613A3A1FAAF7B300D21D50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82613A3C1FAAF7B300D21D50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82613A3F1FAAF7B300D21D50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		82613A411FAAF7B300D21D50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		82613A441FAAF7B300D21D50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82613A461FAAF7B300D21D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82613A4C1FAAFA2000D21D50 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		82613A4D1FAAFA2000D21D50 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -59,6 +59,10 @@
 		82613A581FAAFA4600D21D50 /* iconrhymes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconrhymes.png; sourceTree = "<group>"; };
 		82D5347C1FAC43F600B9F9DE /* RhymeStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhymeStructure.swift; sourceTree = "<group>"; };
 		82E526EA1FB13B6D00859268 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		82E526F01FB1611900859268 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		82E526F21FB1635A00859268 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		82E526F41FB1649C00859268 /* pexels-photo-144429.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pexels-photo-144429.jpg"; sourceTree = "<group>"; };
+		82E526F61FB1657D00859268 /* micDrop.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = micDrop.jpeg; sourceTree = "<group>"; };
 		82F7BD021FAE3C2100F93A6E /* beatLibraryTwoImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beatLibraryTwoImage.jpg; sourceTree = "<group>"; };
 		82F7BD041FAE3E9700F93A6E /* beatPack3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beatPack3.jpg; sourceTree = "<group>"; };
 		82F7BD061FAE435300F93A6E /* ProStudioApp2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ProStudioApp2.jpg; sourceTree = "<group>"; };
@@ -114,9 +118,9 @@
 				8203777F1FACE6F100341FDE /* RhymingTableTableViewController.swift */,
 				82D5347C1FAC43F600B9F9DE /* RhymeStructure.swift */,
 				82613A3E1FAAF7B300D21D50 /* Main.storyboard */,
-				82613A411FAAF7B300D21D50 /* Assets.xcassets */,
-				82613A431FAAF7B300D21D50 /* LaunchScreen.storyboard */,
+				82E526F21FB1635A00859268 /* Launch Screen.storyboard */,
 				82613A461FAAF7B300D21D50 /* Info.plist */,
+				82E526F01FB1611900859268 /* Media.xcassets */,
 				82F7BD081FAE55A200F93A6E /* Images */,
 			);
 			path = ProStudioRhymes;
@@ -125,6 +129,8 @@
 		82F7BD081FAE55A200F93A6E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				82E526F61FB1657D00859268 /* micDrop.jpeg */,
+				82E526F41FB1649C00859268 /* pexels-photo-144429.jpg */,
 				8250308D1FB015A20012CB18 /* ProStudioBeatLibrary3Image.jpg */,
 				8250308B1FB015310012CB18 /* beatCreatorImage.jpg */,
 				82F7BD041FAE3E9700F93A6E /* beatPack3.jpg */,
@@ -217,12 +223,11 @@
 			files = (
 				8250308C1FB015320012CB18 /* beatCreatorImage.jpg in Resources */,
 				82F7BD071FAE435400F93A6E /* ProStudioApp2.jpg in Resources */,
-				82613A451FAAF7B300D21D50 /* LaunchScreen.storyboard in Resources */,
-				82613A421FAAF7B300D21D50 /* Assets.xcassets in Resources */,
 				82613A591FAAFA4600D21D50 /* icongood.png in Resources */,
 				82613A5C1FAAFA4600D21D50 /* TopBar.png in Resources */,
 				82F7BD031FAE3C2100F93A6E /* beatLibraryTwoImage.jpg in Resources */,
 				82613A501FAAFA2000D21D50 /* Default@2x.png in Resources */,
+				82E526F11FB1611900859268 /* Media.xcassets in Resources */,
 				8250308E1FB015A30012CB18 /* ProStudioBeatLibrary3Image.jpg in Resources */,
 				82613A5B1FAAFA4600D21D50 /* TopBar@2x.png in Resources */,
 				820377821FADA7E400341FDE /* beatsPackOne.jpg in Resources */,
@@ -233,7 +238,10 @@
 				82613A401FAAF7B300D21D50 /* Main.storyboard in Resources */,
 				82613A5F1FAAFA4600D21D50 /* iconrhymes.png in Resources */,
 				82613A4F1FAAFA2000D21D50 /* Default.png in Resources */,
+				82E526F31FB1635A00859268 /* Launch Screen.storyboard in Resources */,
 				82613A511FAAFA2000D21D50 /* Default-568h@2x.png in Resources */,
+				82E526F71FB1657D00859268 /* micDrop.jpeg in Resources */,
+				82E526F51FB1649C00859268 /* pexels-photo-144429.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +323,6 @@
 				82613A3F1FAAF7B300D21D50 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		82613A431FAAF7B300D21D50 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82613A441FAAF7B300D21D50 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -149,9 +149,9 @@ class ViewController: UIViewController,UISearchBarDelegate {
             return
         }
         // checks input to make sure that only one word is entered at a time and that fractions are not accepted.
-        if wordToRhyme.range(of: ",") != nil || wordToRhyme.range(of: " ") != nil || wordToRhyme.isEmpty == true || wordToRhyme.range(of: "/") != nil {
+        if wordToRhyme.range(of: ",") != nil || wordToRhyme.range(of: " ") != nil || wordToRhyme.isEmpty == true || wordToRhyme.range(of: "/") != nil || wordToRhyme.range(of: ".") != nil {
            
-            let inputAlert =   UIAlertController(title: "Invailid Input", message: "Only a single word at a time is allowed or you have left the input blank", preferredStyle: .alert)
+            let inputAlert =   UIAlertController(title: "Invailid Input", message: "Only a single word at a time is allowed or you have left the input blank or input an invalid character", preferredStyle: .alert)
             
             inputAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             
